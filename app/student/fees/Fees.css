@@ -1,0 +1,660 @@
+/* =========================================================
+   FEES PAGE
+   ========================================================= */
+
+.fees-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.1);
+}
+
+.fees-header h1 {
+  margin: 15px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(50px, 5vw, 72px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+}
+
+.fees-header h1 em {
+  color: #a17d42;
+
+  font-style: italic;
+}
+
+.fees-header p {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: rgba(16, 24, 32, 0.48);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SESSION
+   ========================================================= */
+
+.fees-session {
+  min-width: 150px;
+
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  background: #101820;
+
+  color: white;
+}
+
+.fees-session span {
+  color: rgba(255,255,255,.4);
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.fees-session strong {
+  color: #c9a45c;
+
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.fees-summary {
+  margin-top: 25px;
+
+  display: grid;
+
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+
+  background: #101820;
+
+  color: white;
+}
+
+.fees-balance {
+  padding: 28px;
+
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.fees-balance > span,
+.fees-summary-item > span {
+  color: rgba(255,255,255,.35);
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.fees-balance strong {
+  display: block;
+
+  margin-top: 10px;
+
+  color: #c9a45c;
+
+  font-family: Georgia, serif;
+
+  font-size: 34px;
+
+  font-weight: 400;
+}
+
+.fees-balance p {
+  margin: 8px 0 0;
+
+  color: rgba(255,255,255,.35);
+
+  font-size: 9px;
+}
+
+.fees-summary-item {
+  min-height: 125px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 9px;
+
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.fees-summary-item:last-child {
+  border-right: 0;
+}
+
+.fees-summary-item strong {
+  font-family: Georgia, serif;
+
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+.fees-summary-item .fee-due {
+  color: #c9a45c;
+}
+
+
+/* =========================================================
+   CURRENT INVOICE
+   ========================================================= */
+
+.fee-current {
+  margin-top: 15px;
+
+  background: white;
+
+  border: 1px solid rgba(16,24,32,.08);
+}
+
+.fee-current-heading {
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(16,24,32,.08);
+}
+
+.fee-current-heading > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.fee-current-heading span:first-child {
+  color: #a17d42;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.fee-current-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 24px;
+
+  font-weight: 400;
+}
+
+.fee-invoice-number {
+  color: rgba(16,24,32,.3);
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   INVOICE BODY
+   ========================================================= */
+
+.fee-current-body {
+  padding: 25px;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: 25px;
+}
+
+.fee-description,
+.fee-amount,
+.fee-due-date {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.fee-current-body span,
+.fee-current-footer span {
+  color: rgba(16,24,32,.32);
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+}
+
+.fee-current-body strong {
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+}
+
+.fee-description p {
+  margin: 0;
+
+  color: rgba(16,24,32,.35);
+
+  font-size: 9px;
+}
+
+.fee-amount strong {
+  color: #a17d42;
+
+  font-size: 22px;
+}
+
+
+/* =========================================================
+   INVOICE FOOTER
+   ========================================================= */
+
+.fee-current-footer {
+  padding: 18px 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #f8f7f3;
+
+  border-top: 1px solid rgba(16,24,32,.08);
+}
+
+.fee-current-footer > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.fee-current-footer strong {
+  color: #a17d42;
+
+  font-size: 10px;
+}
+
+.fee-current-footer button {
+  padding: 12px 20px;
+
+  border: 0;
+
+  background: #101820;
+
+  color: white;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: .8px;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.fee-current-footer button:hover {
+  background: #c9a45c;
+
+  color: #101820;
+}
+
+.fee-current-footer button span {
+  margin-left: 10px;
+
+  color: inherit;
+}
+
+
+/* =========================================================
+   PAYMENT HISTORY
+   ========================================================= */
+
+.fees-section {
+  margin-top: 15px;
+
+  background: white;
+
+  border: 1px solid rgba(16,24,32,.08);
+}
+
+.fees-section-heading {
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(16,24,32,.08);
+}
+
+.fees-section-heading > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.fees-section-heading span {
+  color: #a17d42;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.fees-section-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 23px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   FEE TABLE
+   ========================================================= */
+
+.fee-table-head,
+.fee-table-row {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    1.8fr
+    1fr
+    1fr
+    .8fr;
+
+  align-items: center;
+}
+
+.fee-table-head {
+  min-height: 43px;
+
+  padding: 0 22px;
+
+  background: #f8f7f3;
+}
+
+.fee-table-head span {
+  color: rgba(16,24,32,.3);
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.fee-table-row {
+  min-height: 68px;
+
+  padding: 0 22px;
+
+  border-top: 1px solid rgba(16,24,32,.07);
+}
+
+.fee-table-row strong {
+  font-family: Georgia, serif;
+
+  font-size: 12px;
+
+  font-weight: 400;
+}
+
+.fee-table-row > span {
+  color: rgba(16,24,32,.45);
+
+  font-size: 9px;
+}
+
+.fee-row-amount {
+  color: #101820 !important;
+
+  font-family: Georgia, serif;
+
+  font-size: 12px !important;
+}
+
+.fee-paid {
+  color: #557b51 !important;
+
+  font-size: 8px !important;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   INFO
+   ========================================================= */
+
+.fee-info {
+  margin-top: 15px;
+
+  padding: 25px;
+
+  display: flex;
+
+  gap: 20px;
+
+  background: rgba(201,164,92,.08);
+
+  border: 1px solid rgba(201,164,92,.18);
+}
+
+.fee-info-number {
+  color: #a17d42;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.fee-info > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.fee-info span {
+  color: #a17d42;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.fee-info h3 {
+  margin: 4px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 21px;
+
+  font-weight: 400;
+}
+
+.fee-info p {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: rgba(16,24,32,.45);
+
+  font-size: 10px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .fees-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fees-balance {
+    grid-column: 1 / -1;
+
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  .fees-summary-item:nth-child(3) {
+    border-right: 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .fees-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .fees-header h1 {
+    font-size: 55px;
+  }
+
+  .fees-session {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .fees-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fees-balance {
+    grid-column: 1 / -1;
+  }
+
+  .fee-current-body {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-table {
+    overflow-x: auto;
+  }
+
+  .fee-table-head,
+  .fee-table-row {
+    min-width: 700px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .fees-header h1 {
+    font-size: 48px;
+  }
+
+  .fees-balance {
+    padding: 22px;
+  }
+
+  .fees-balance strong {
+    font-size: 29px;
+  }
+
+  .fees-summary-item {
+    padding: 18px;
+  }
+
+  .fee-current-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .fee-current-body {
+    padding: 20px;
+  }
+
+  .fee-current-footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .fee-current-footer button {
+    width: 100%;
+  }
+
+  .fees-section-heading {
+    padding: 18px;
+  }
+
+}

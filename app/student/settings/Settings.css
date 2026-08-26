@@ -1,0 +1,690 @@
+/* =========================================================
+   AL-HAYTHAM SCHOOL
+   STUDENT SETTINGS
+   ========================================================= */
+
+.settings-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.1);
+}
+
+.settings-header h1 {
+  margin: 16px 0;
+
+  color: #101820;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(52px, 5.2vw, 76px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+}
+
+.settings-header h1 em {
+  color: #a17d42;
+
+  font-style: italic;
+}
+
+.settings-header p {
+  max-width: 570px;
+
+  margin: 0;
+
+  color: rgba(16, 24, 32, 0.5);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   USER BOX
+   ========================================================= */
+
+.settings-user-box {
+  width: 190px;
+
+  padding: 16px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  background: #101820;
+
+  color: white;
+}
+
+.settings-mini-avatar {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #c9a45c;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+}
+
+.settings-user-box > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.settings-user-box strong {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+}
+
+.settings-user-box span {
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.settings-section {
+  margin-top: 15px;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(16, 24, 32, 0.08);
+}
+
+.settings-section-title {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 15px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.08);
+}
+
+.settings-section-title > span {
+  color: #c9a45c;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+}
+
+.settings-section-title > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.settings-section-title small {
+  color: #a17d42;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.settings-section-title h2 {
+  margin: 0;
+
+  color: #101820;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 24px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   ACCOUNT INFO
+   ========================================================= */
+
+.settings-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.settings-info {
+  min-height: 82px;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 7px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.07);
+}
+
+.settings-info:nth-child(odd) {
+  border-right: 1px solid rgba(16, 24, 32, 0.07);
+}
+
+.settings-info span {
+  color: rgba(16, 24, 32, 0.34);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+}
+
+.settings-info strong {
+  color: #101820;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+.settings-status {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.settings-status i {
+  width: 7px;
+  height: 7px;
+
+  display: inline-block;
+
+  border-radius: 50%;
+
+  background: #829b55;
+}
+
+
+/* =========================================================
+   SECURITY
+   ========================================================= */
+
+.settings-security {
+  min-height: 88px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.07);
+}
+
+.settings-security:last-child {
+  border-bottom: none;
+}
+
+.settings-security > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.settings-security strong {
+  color: #101820;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+}
+
+.settings-security p {
+  margin: 0;
+
+  color: rgba(16, 24, 32, 0.4);
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+.settings-outline-button {
+  min-height: 40px;
+
+  padding: 0 14px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  background: transparent;
+
+  border: 1px solid rgba(16, 24, 32, 0.14);
+
+  color: #101820;
+
+  font-family: inherit;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.settings-outline-button span {
+  color: #a17d42;
+
+  font-size: 13px;
+}
+
+.settings-outline-button:hover {
+  background: #101820;
+
+  color: #ffffff;
+
+  border-color: #101820;
+}
+
+
+/* =========================================================
+   NOTIFICATION TOGGLES
+   ========================================================= */
+
+.settings-toggle-list {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.settings-toggle-row {
+  min-height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.07);
+}
+
+.settings-toggle-row:last-child {
+  border-bottom: none;
+}
+
+.settings-toggle-row > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.settings-toggle-row strong {
+  color: #101820;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+}
+
+.settings-toggle-row p {
+  margin: 0;
+
+  color: rgba(16, 24, 32, 0.4);
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   TOGGLE
+   ========================================================= */
+
+.settings-toggle {
+  width: 48px;
+  height: 26px;
+
+  padding: 3px;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #d9d7d0;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.settings-toggle span {
+  width: 20px;
+  height: 20px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  transition: transform 0.25s ease;
+}
+
+.settings-toggle.active {
+  background: #101820;
+}
+
+.settings-toggle.active span {
+  transform: translateX(22px);
+}
+
+
+/* =========================================================
+   PREFERENCES
+   ========================================================= */
+
+.settings-preference {
+  min-height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-bottom: 1px solid rgba(16, 24, 32, 0.07);
+}
+
+.settings-preference:last-child {
+  border-bottom: none;
+}
+
+.settings-preference > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.settings-preference strong {
+  color: #101820;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+}
+
+.settings-preference p {
+  margin: 0;
+
+  color: rgba(16, 24, 32, 0.4);
+
+  font-size: 9px;
+}
+
+.settings-preference select {
+  min-width: 155px;
+
+  height: 40px;
+
+  padding: 0 12px;
+
+  background: #f5f2eb;
+
+  border: 1px solid rgba(16, 24, 32, 0.1);
+
+  color: #101820;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+.settings-preference select:focus {
+  border-color: #a17d42;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.settings-actions {
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.settings-cancel {
+  color: rgba(16, 24, 32, 0.45);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.settings-cancel:hover {
+  color: #a17d42;
+}
+
+.settings-save {
+  min-height: 46px;
+
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border: none;
+
+  background: #101820;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.settings-save span {
+  color: #c9a45c;
+
+  font-size: 14px;
+}
+
+.settings-save:hover {
+  background: #1b2730;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .settings-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .settings-user-box {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .settings-header h1 {
+    font-size: 50px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .settings-section {
+    padding: 18px;
+  }
+
+  .settings-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-info:nth-child(odd) {
+    border-right: none;
+  }
+
+  .settings-security {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    padding: 18px 0;
+  }
+
+  .settings-outline-button {
+    width: 100%;
+  }
+
+  .settings-toggle-row {
+    align-items: flex-start;
+
+    padding: 18px 0;
+  }
+
+  .settings-preference {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    padding: 18px 0;
+  }
+
+  .settings-preference select {
+    width: 100%;
+  }
+
+  .settings-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .settings-save {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .settings-header h1 {
+    font-size: 44px;
+  }
+
+  .settings-section-title h2 {
+    font-size: 21px;
+  }
+
+  .settings-info strong,
+  .settings-security strong,
+  .settings-toggle-row strong,
+  .settings-preference strong {
+    font-size: 13px;
+  }
+
+}

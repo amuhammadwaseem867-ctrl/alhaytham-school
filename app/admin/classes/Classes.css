@@ -1,0 +1,803 @@
+/* =========================================================
+   AL-HAYTHAM SCHOOL
+   CLASSES
+   ========================================================= */
+
+.classes-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #f5f3ee;
+  color: #101820;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.classes-sidebar {
+  position: fixed;
+
+  inset: 0 auto 0 0;
+
+  width: 250px;
+  height: 100vh;
+
+  padding: 34px 24px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #101820;
+  color: #fff;
+
+  z-index: 100;
+}
+
+.classes-logo {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+
+  margin-bottom: 42px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.classes-logo span {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 22px;
+
+  letter-spacing: 2px;
+}
+
+.classes-logo small {
+  margin-top: 5px;
+
+  color: #c9a45c;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+
+/* ADMIN */
+
+.classes-admin {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.classes-admin-avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #c9a45c;
+  color: #101820;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+}
+
+.classes-admin div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.classes-admin strong {
+  font-size: 13px;
+}
+
+.classes-admin span {
+  color: rgba(255,255,255,.42);
+
+  font-size: 11px;
+}
+
+
+/* NAVIGATION */
+
+.classes-navigation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.classes-nav-label {
+  margin-bottom: 8px;
+
+  color: rgba(255,255,255,.3);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.classes-space {
+  margin-top: 25px;
+}
+
+.classes-navigation a {
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 0 12px;
+
+  border-left: 2px solid transparent;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: .2s ease;
+}
+
+.classes-navigation a span {
+  width: 18px;
+
+  color: rgba(255,255,255,.25);
+
+  font-size: 9px;
+}
+
+.classes-navigation a:hover {
+  color: #fff;
+
+  background: rgba(255,255,255,.05);
+}
+
+.classes-navigation .classes-active {
+  color: #fff;
+
+  background: rgba(201,164,92,.1);
+
+  border-left-color: #c9a45c;
+}
+
+.classes-navigation .classes-active span {
+  color: #c9a45c;
+}
+
+
+/* LOGOUT */
+
+.classes-logout {
+  margin-top: auto;
+
+  padding: 18px 12px 0;
+
+  border-top: 1px solid rgba(255,255,255,.1);
+
+  color: rgba(255,255,255,.4);
+
+  font-size: 11px;
+
+  text-decoration: none;
+}
+
+.classes-logout:hover {
+  color: #c9a45c;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.classes-content {
+  width: calc(100% - 250px);
+
+  min-height: 100vh;
+
+  margin-left: 250px;
+
+  padding: 55px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.classes-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 35px;
+
+  padding-bottom: 42px;
+
+  border-bottom: 1px solid rgba(16,24,32,.1);
+}
+
+.classes-eyebrow {
+  color: #a17d42;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.classes-header h1 {
+  margin: 15px 0 14px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(48px, 5vw, 72px);
+
+  font-weight: 400;
+
+  line-height: .9;
+
+  letter-spacing: -3px;
+}
+
+.classes-header h1 em {
+  color: #a17d42;
+
+  font-style: italic;
+}
+
+.classes-header p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: rgba(16,24,32,.48);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ADD BUTTON */
+
+.add-class-button {
+  min-width: 150px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 20px;
+
+  border: 1px solid #101820;
+
+  background: #101820;
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.add-class-button span {
+  color: #c9a45c;
+
+  font-size: 22px;
+
+  font-weight: 300;
+}
+
+.add-class-button:hover {
+  background: #c9a45c;
+
+  border-color: #c9a45c;
+
+  color: #101820;
+}
+
+.add-class-button:hover span {
+  color: #101820;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.classes-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+
+  margin: 28px 0 15px;
+}
+
+.class-stat {
+  min-height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 18px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+
+  border: 1px solid rgba(16,24,32,.08);
+}
+
+.class-stat span {
+  color: rgba(16,24,32,.4);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+.class-stat strong {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 34px;
+
+  font-weight: 400;
+}
+
+.class-stat small {
+  color: rgba(16,24,32,.32);
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   CLASS GRID
+   ========================================================= */
+
+.classes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.class-card {
+  min-height: 315px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 23px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+
+  border: 1px solid rgba(16,24,32,.08);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 35px rgba(16,24,32,.07);
+}
+
+
+/* CARD TOP */
+
+.class-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.class-id {
+  color: #a17d42;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.class-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 6px 8px;
+
+  background: #e8f0e5;
+
+  color: #557044;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: .8px;
+}
+
+.class-status i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+
+/* TITLE */
+
+.class-title {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin: 28px 0 23px;
+}
+
+.class-title span {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 34px;
+
+  font-weight: 400;
+
+  letter-spacing: -1px;
+}
+
+.class-title strong {
+  color: #a17d42;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* TEACHER */
+
+.class-teacher {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(16,24,32,.08);
+}
+
+.class-teacher-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f0ede5;
+
+  color: #a17d42;
+
+  font-family: Georgia, serif;
+
+  font-size: 14px;
+}
+
+.class-teacher div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.class-teacher small {
+  color: rgba(16,24,32,.35);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.class-teacher strong {
+  font-size: 12px;
+}
+
+
+/* DETAILS */
+
+.class-details {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  padding: 18px 0;
+}
+
+.class-details div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.class-details span {
+  color: rgba(16,24,32,.32);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.class-details strong {
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* VIEW */
+
+.class-view {
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  border-top: 1px solid rgba(16,24,32,.08);
+
+  color: #101820;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: .2s ease;
+}
+
+.class-view span {
+  color: #a17d42;
+
+  font-size: 18px;
+}
+
+.class-view:hover {
+  color: #a17d42;
+}
+
+
+/* FOOTER */
+
+.classes-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 25px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(16,24,32,.1);
+
+  color: rgba(16,24,32,.3);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .classes-sidebar {
+    width: 220px;
+  }
+
+  .classes-content {
+    width: calc(100% - 220px);
+
+    margin-left: 220px;
+
+    padding: 45px 35px;
+  }
+
+  .classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .classes-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .classes-page {
+    display: block;
+  }
+
+  .classes-sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding: 25px 20px;
+  }
+
+  .classes-navigation {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 3px;
+  }
+
+  .classes-nav-label {
+    grid-column: 1 / -1;
+
+    margin-top: 10px;
+  }
+
+  .classes-space {
+    margin-top: 15px;
+  }
+
+  .classes-logout {
+    margin-top: 20px;
+  }
+
+
+  .classes-content {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding: 35px 20px;
+  }
+
+
+  .classes-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .classes-header h1 {
+    font-size: 54px;
+  }
+
+  .add-class-button {
+    width: 100%;
+  }
+
+
+  .classes-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .classes-footer {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .classes-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .classes-content {
+    padding: 30px 15px;
+  }
+
+  .classes-header h1 {
+    font-size: 48px;
+  }
+
+  .classes-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .class-card {
+    padding: 20px;
+  }
+
+}

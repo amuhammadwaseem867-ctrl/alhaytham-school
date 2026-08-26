@@ -1,0 +1,308 @@
+.campus {
+  padding: 140px 0;
+
+  background: #111c2c;
+  color: #ffffff;
+}
+
+.campus-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.campus-header {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  gap: 50px;
+
+  padding-bottom: 75px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.campus-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding-top: 15px;
+
+  color: #c9a45c;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.campus-label span {
+  width: 30px;
+  height: 1px;
+
+  background: #c9a45c;
+}
+
+.campus-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 70px;
+}
+
+.campus-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(52px, 6vw, 84px);
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+.campus-heading h2 em {
+  color: #c9a45c;
+  font-style: italic;
+}
+
+.campus-heading p {
+  max-width: 340px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.56);
+
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.campus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+
+  padding-top: 60px;
+}
+
+.campus-card {
+  overflow: hidden;
+
+  background: #0a1525;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.campus-image {
+  position: relative;
+
+  height: 390px;
+
+  background-position: center;
+  background-size: cover;
+  background-color: #172335;
+
+  overflow: hidden;
+
+  transition: transform 0.6s ease;
+}
+
+.campus-card:hover .campus-image {
+  transform: scale(1.025);
+}
+
+.campus-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 14, 28, 0.15),
+      rgba(5, 14, 28, 0.7)
+    );
+}
+
+.campus-number {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  color: #c9a45c;
+
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+.campus-icon {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  transition: 0.3s ease;
+}
+
+.campus-card:hover .campus-icon {
+  background: #c9a45c;
+  border-color: #c9a45c;
+  color: #081223;
+
+  transform: translate(3px, -3px);
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.campus-card-content {
+  padding: 30px 30px 35px;
+}
+
+.campus-card-content h3 {
+  margin: 0 0 12px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.campus-card-content p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.53);
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.campus-bottom {
+  display: grid;
+  grid-template-columns: auto 1fr 360px;
+  align-items: center;
+  gap: 25px;
+
+  padding-top: 65px;
+}
+
+.campus-bottom > span {
+  color: #c9a45c;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.campus-line {
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.campus-bottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .campus-container {
+    width: calc(100% - 48px);
+  }
+
+  .campus-header {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .campus-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .campus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-bottom {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .campus-line {
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .campus {
+    padding: 90px 0;
+  }
+
+  .campus-container {
+    width: calc(100% - 32px);
+  }
+
+  .campus-header {
+    padding-bottom: 50px;
+  }
+
+  .campus-heading h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .campus-grid {
+    padding-top: 45px;
+    gap: 18px;
+  }
+
+  .campus-image {
+    height: 280px;
+  }
+
+  .campus-card-content {
+    padding: 25px 22px 28px;
+  }
+
+  .campus-card-content h3 {
+    font-size: 24px;
+  }
+}

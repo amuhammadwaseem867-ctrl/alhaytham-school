@@ -1,0 +1,832 @@
+/* =========================================================
+   AL-HAYTHAM SCHOOL
+   ADMIN — ADD STUDENT
+   ========================================================= */
+
+.add-student-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #f5f3ee;
+
+  color: #101820;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.add-student-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 100vh;
+
+  padding: 34px 24px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #101820;
+
+  color: #ffffff;
+
+  z-index: 100;
+}
+
+
+/* LOGO */
+
+.add-student-logo {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+
+  margin-bottom: 42px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.add-student-logo span {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 22px;
+
+  letter-spacing: 2px;
+}
+
+.add-student-logo small {
+  margin-top: 5px;
+
+  color: #c9a45c;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+
+/* PROFILE */
+
+.add-student-profile {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+}
+
+.add-student-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #c9a45c;
+
+  color: #101820;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15px;
+}
+
+.add-student-profile div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.add-student-profile strong {
+  font-size: 13px;
+}
+
+.add-student-profile span {
+  color: rgba(255, 255, 255, 0.42);
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.add-student-navigation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.add-nav-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.add-nav-space {
+  margin-top: 25px;
+}
+
+.add-student-navigation a {
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 0 12px;
+
+  border-left: 2px solid transparent;
+
+  box-sizing: border-box;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.add-student-navigation a span {
+  width: 18px;
+
+  color: rgba(255, 255, 255, 0.25);
+
+  font-size: 9px;
+}
+
+.add-student-navigation a:hover {
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.05);
+}
+
+.add-student-navigation a:hover span {
+  color: #c9a45c;
+}
+
+.add-student-navigation a.add-nav-active {
+  color: #ffffff;
+
+  background:
+    rgba(201, 164, 92, 0.1);
+
+  border-left-color: #c9a45c;
+}
+
+.add-student-navigation a.add-nav-active span {
+  color: #c9a45c;
+}
+
+
+/* LOGOUT */
+
+.add-student-logout {
+  margin-top: auto;
+
+  padding: 18px 12px 0;
+
+  min-height: 42px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 11px;
+
+  text-decoration: none;
+}
+
+.add-student-logout:hover {
+  color: #c9a45c;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.add-student-content {
+  width: calc(100% - 250px);
+
+  min-height: 100vh;
+
+  margin-left: 250px;
+
+  padding: 55px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.add-student-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-bottom: 42px;
+
+  border-bottom:
+    1px solid
+    rgba(16, 24, 32, 0.1);
+}
+
+.add-student-eyebrow {
+  color: #a17d42;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.add-student-header h1 {
+  margin: 15px 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(48px, 5vw, 72px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+}
+
+.add-student-header h1 em {
+  color: #a17d42;
+
+  font-style: italic;
+}
+
+.add-student-header p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: rgba(16, 24, 32, 0.5);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* BACK BUTTON */
+
+.back-students-button {
+  min-height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 18px;
+
+  border:
+    1px solid
+    rgba(16, 24, 32, 0.15);
+
+  color: #101820;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition: 0.25s ease;
+}
+
+.back-students-button:hover {
+  background: #101820;
+
+  border-color: #101820;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.student-form {
+  margin-top: 35px;
+}
+
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.form-section {
+  margin-bottom: 20px;
+
+  padding: 32px;
+
+  background: #ffffff;
+
+  border:
+    1px solid
+    rgba(16, 24, 32, 0.08);
+}
+
+.form-section-heading {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  margin-bottom: 30px;
+
+  padding-bottom: 20px;
+
+  border-bottom:
+    1px solid
+    rgba(16, 24, 32, 0.08);
+}
+
+.form-section-heading > span {
+  color: #c9a45c;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+}
+
+.form-section-heading small {
+  color: #a17d42;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.form-section-heading h2 {
+  margin: 7px 0 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   FORM GRID
+   ========================================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.full-field {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: #101820;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.form-field label span {
+  margin-left: 3px;
+
+  color: #b27c45;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 0 14px;
+
+  border:
+    1px solid
+    rgba(16, 24, 32, 0.14);
+
+  outline: none;
+
+  background: #faf9f6;
+
+  color: #101820;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.form-field input,
+.form-field select {
+  height: 48px;
+}
+
+.form-field textarea {
+  min-height: 105px;
+
+  padding-top: 14px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(16, 24, 32, 0.35);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #c9a45c;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.student-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 25px;
+
+  padding: 25px 0;
+
+  border-top:
+    1px solid
+    rgba(16, 24, 32, 0.1);
+}
+
+.cancel-student {
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 25px;
+
+  border:
+    1px solid
+    rgba(16, 24, 32, 0.14);
+
+  color: #101820;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.cancel-student:hover {
+  background: #eeeae1;
+}
+
+.save-student {
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 0 27px;
+
+  border: 1px solid #101820;
+
+  background: #101820;
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.save-student span {
+  color: #c9a45c;
+
+  font-size: 18px;
+}
+
+.save-student:hover {
+  background: #c9a45c;
+
+  border-color: #c9a45c;
+
+  color: #101820;
+}
+
+.save-student:hover span {
+  color: #101820;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.add-student-footer {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-top: 25px;
+
+  padding-top: 18px;
+
+  border-top:
+    1px solid
+    rgba(16, 24, 32, 0.1);
+
+  color: rgba(16, 24, 32, 0.3);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .add-student-sidebar {
+    width: 220px;
+  }
+
+  .add-student-content {
+    width: calc(100% - 220px);
+
+    margin-left: 220px;
+
+    padding: 45px 35px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .add-student-page {
+    display: block;
+  }
+
+  .add-student-sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding: 25px 20px;
+  }
+
+  .add-student-logo {
+    margin-bottom: 25px;
+  }
+
+  .add-student-profile {
+    margin-bottom: 20px;
+
+    padding-bottom: 20px;
+  }
+
+  .add-student-navigation {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 3px;
+  }
+
+  .add-nav-label {
+    grid-column: 1 / -1;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .add-nav-space {
+    margin-top: 15px;
+  }
+
+  .add-student-navigation a {
+    min-height: 42px;
+  }
+
+  .add-student-logout {
+    margin-top: 20px;
+  }
+
+
+  /* CONTENT */
+
+  .add-student-content {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding: 35px 20px;
+  }
+
+  .add-student-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .back-students-button {
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-field {
+    grid-column: auto;
+  }
+
+  .form-section {
+    padding: 23px;
+  }
+
+  .student-form-actions {
+    justify-content: stretch;
+  }
+
+  .cancel-student,
+  .save-student {
+    flex: 1;
+  }
+
+  .add-student-footer {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .add-student-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .add-student-content {
+    padding: 30px 15px;
+  }
+
+  .add-student-header h1 {
+    font-size: 48px;
+  }
+
+  .form-section {
+    padding: 20px 17px;
+  }
+
+  .form-section-heading h2 {
+    font-size: 22px;
+  }
+
+  .student-form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-student,
+  .save-student {
+    width: 100%;
+  }
+
+}
