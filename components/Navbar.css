@@ -21,9 +21,7 @@
   gap: 40px;
 }
 
-/* =========================
-   LOGO
-========================= */
+/* Logo */
 
 .navbar-logo {
   display: flex;
@@ -72,9 +70,7 @@
   letter-spacing: 4px;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* Navigation */
 
 .nav-menu {
   display: flex;
@@ -123,9 +119,7 @@
   width: 100%;
 }
 
-/* =========================
-   PORTAL BUTTON
-========================= */
+/* Portal button */
 
 .portal-button {
   display: inline-flex;
@@ -163,9 +157,7 @@
   display: none;
 }
 
-/* =========================
-   MOBILE MENU BUTTON
-========================= */
+/* Mobile menu button */
 
 .menu-toggle {
   display: none;
@@ -210,9 +202,7 @@
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
 @media (max-width: 1100px) {
   .navbar-container {
@@ -233,9 +223,7 @@
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 900px) {
   .navbar {
@@ -306,9 +294,7 @@
   }
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* Small mobile */
 
 @media (max-width: 480px) {
   .navbar-container {

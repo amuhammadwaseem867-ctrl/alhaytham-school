@@ -11,9 +11,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   HEADING
-========================= */
+/* Heading */
 
 .about-heading {
   display: grid;
@@ -64,9 +62,7 @@
   font-style: italic;
 }
 
-/* =========================
-   CONTENT
-========================= */
+/* Content */
 
 .about-content {
   display: grid;
@@ -138,9 +134,7 @@
   transform: translate(4px, -4px);
 }
 
-/* =========================
-   FEATURES
-========================= */
+/* Features */
 
 .about-features {
   display: grid;
@@ -187,9 +181,7 @@
   line-height: 1.8;
 }
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .about-container {
@@ -215,9 +207,7 @@
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
   .about {

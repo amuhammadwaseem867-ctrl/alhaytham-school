@@ -108,7 +108,7 @@ export default function TeacherProfilePage() {
   return (
     <main className="teacher-profile-page">
 
-      {/* ================= SIDEBAR ================= */}
+      {/* Sidebar */}
 
       <aside className="teacher-profile-sidebar">
 
@@ -201,7 +201,7 @@ export default function TeacherProfilePage() {
       </aside>
 
 
-      {/* ================= CONTENT ================= */}
+      {/* Content */}
 
       <section className="teacher-profile-content">
 
