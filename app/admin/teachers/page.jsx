@@ -71,7 +71,7 @@ export default function TeachersPage() {
   return (
     <main className="teachers-page">
 
-      {/* ================= SIDEBAR ================= */}
+      {/* Sidebar */}
 
       <aside className="teachers-sidebar">
 
@@ -164,7 +164,7 @@ export default function TeachersPage() {
       </aside>
 
 
-      {/* ================= MAIN CONTENT ================= */}
+      {/* Main content */}
 
       <section className="teachers-content">
 

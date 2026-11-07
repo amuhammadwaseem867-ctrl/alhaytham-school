@@ -10,9 +10,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   TOP
-========================= */
+/* TOP */
 
 .academics-top {
   display: grid;
@@ -78,9 +76,7 @@
   line-height: 1.8;
 }
 
-/* =========================
-   ACADEMIC LIST
-========================= */
+/* Academic list */
 
 .academic-list {
   padding-top: 15px;
@@ -185,9 +181,7 @@
   transform: translate(3px, -3px);
 }
 
-/* =========================
-   BOTTOM
-========================= */
+/* Bottom */
 
 .academics-bottom {
   display: flex;
@@ -217,9 +211,7 @@
   line-height: 1.8;
 }
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .academics-container {
@@ -242,9 +234,7 @@
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
   .academics {

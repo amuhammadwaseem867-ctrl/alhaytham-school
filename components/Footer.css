@@ -10,9 +10,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* Main */
 
 .footer-main {
   display: grid;
@@ -24,9 +22,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* =========================
-   BRAND
-========================= */
+/* Brand */
 
 .footer-brand {
   max-width: 390px;
@@ -98,9 +94,7 @@
   transform: translate(3px, -3px);
 }
 
-/* =========================
-   COLUMNS
-========================= */
+/* Columns */
 
 .footer-column {
   display: flex;
@@ -147,9 +141,7 @@
   line-height: 1.7;
 }
 
-/* =========================
-   BOTTOM
-========================= */
+/* Bottom */
 
 .footer-bottom {
   display: grid;
@@ -187,9 +179,7 @@
   color: rgba(255, 255, 255, 0.25);
 }
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .footer-container {
@@ -215,9 +205,7 @@
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
   .footer {

@@ -10,9 +10,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* Header */
 
 .campus-header {
   display: grid;
@@ -79,9 +77,7 @@
   line-height: 1.85;
 }
 
-/* =========================
-   GRID
-========================= */
+/* Grid */
 
 .campus-grid {
   display: grid;
@@ -169,9 +165,7 @@
   transform: translate(3px, -3px);
 }
 
-/* =========================
-   CARD CONTENT
-========================= */
+/* Card content */
 
 .campus-card-content {
   padding: 30px 30px 35px;
@@ -197,9 +191,7 @@
   line-height: 1.8;
 }
 
-/* =========================
-   BOTTOM
-========================= */
+/* Bottom */
 
 .campus-bottom {
   display: grid;
@@ -233,9 +225,7 @@
   line-height: 1.7;
 }
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .campus-container {
@@ -267,9 +257,7 @@
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
   .campus {

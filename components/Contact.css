@@ -10,9 +10,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* Header */
 
 .contact-header {
   display: grid;
@@ -80,9 +78,7 @@
   line-height: 1.85;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* Main */
 
 .contact-main {
   display: grid;
@@ -93,9 +89,7 @@
   padding-top: 80px;
 }
 
-/* =========================
-   INFO
-========================= */
+/* Info */
 
 .contact-info {
   display: flex;
@@ -161,9 +155,7 @@
   color: #a17c3e;
 }
 
-/* =========================
-   FORM
-========================= */
+/* Form */
 
 .contact-form {
   display: flex;
@@ -279,9 +271,7 @@
   transform: translate(3px, -3px);
 }
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .contact-container {
@@ -305,9 +295,7 @@
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
   .contact {
